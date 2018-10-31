@@ -1,11 +1,32 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+int cmp(const void *a, const void *b){ //quicksort comparator
+   return ( *(int*)b - *(int*)a);
+  // return negative if a<b
+  // return postive if a>b
+/*  if (*(int*)a > *(int*)b)
+    return -1;
+  if (*(int*)a == *(int*)b)
+    return 0;
+  if (*(int*)a > *(int*)b)
+    return 1;
+    */
+}
 
 int main(){
-  //sort the array and then ouput first k numbers
-
-
-
-
-
-
+  //quicksort the array and then ouput first k numbers
+  // print first topNUM elements
+  int n, *array, topNUM, i, j;
+  scanf("%d\n",&n);
+  array = (int*) malloc(n*sizeof(int));
+  for (i = 0; i < n; i++) {
+    scanf("%d\n",&array[i]);
+  }
+  scanf("%d\n",&topNUM);
+  // void qsort(void *base, size_t nel, size_t width, int (*compar)(const void *, const void *));
+  qsort(array, n, sizeof(int), cmp);
+  for (j = 0; j < topNUM; j++) {
+    printf("%d\n",array[j] );
+  }
 }

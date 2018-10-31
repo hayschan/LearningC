@@ -18,7 +18,7 @@ int main() {
       LargestNum=array[i];
     }
   }
-  for (j = 0; j < n; j++) { //assign 0 to elements with largest number
+  for (j = 0; j < n; j++) { //add elements != LargestNum
     if (array[j]!=LargestNum) {
       sum += array[j];
     }
