@@ -3,10 +3,10 @@
 
 int main() {
   /*
-  mindflow
-  find out the LargestNum in the array
-  the sum is all elements that != LargestNum
-  print sum
+  Mindflow
+  1. find out the LargestNum in the array
+  2. add the sum of all elements that != LargestNum
+  3. print sum
   */
   int n, LargestNum = 0, sum=0, array[100], i, j, k;
   scanf("%d\n",&n);
@@ -22,12 +22,6 @@ int main() {
       sum += array[j];
     }
   }
-/*  for (k = 0; k < n; k++) { //add all remaining elements in the array
-    if (array[k]!=0) {
-      sum = sum + array[k];
-    }
-  }
-*/
   printf("\n%d\n",sum);
   return 0;
 }
