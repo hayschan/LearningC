@@ -10,6 +10,7 @@ int main() {
   */
   int n, LargestNum = 0, sum, array[100], i, j, k;
   scanf("%d\n",&n);
+  // try malloc tonight
   for (i = 0; i < n; i++) { //input and find the largest number
     scanf("%d ",&array[i]);
     if (array[i]>LargestNum) {
