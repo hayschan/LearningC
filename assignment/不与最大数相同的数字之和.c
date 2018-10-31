@@ -8,9 +8,10 @@ int main() {
   2. add the sum of all elements that != LargestNum
   3. print sum
   */
-  int n, LargestNum = 0, sum=0, array[100], i, j, k;
+  int n, LargestNum = 0, sum=0, i, j;
+  int *array;
   scanf("%d\n",&n);
-  // try malloc tonight
+  array = (int*) malloc(n*sizeof(int));
   for (i = 0; i < n; i++) { //input and find the largest number
     scanf("%d",&array[i]);
     if (array[i]>LargestNum) {
@@ -23,5 +24,6 @@ int main() {
     }
   }
   printf("\n%d\n",sum);
+  free(array);
   return 0;
 }
