@@ -1,0 +1,37 @@
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c: In function 'main':
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:13:14: warning: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+       strcpy(*temp,chr_array[j]);
+              ^
+In file included from C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:2:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:14:27: warning: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+       strcpy(chr_array[k],*temp);
+                           ^
+In file included from C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:2:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c: At top level:
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:19:3: error: expected identifier or '(' before 'for'
+   for (z = 0; z < n - 2; z++) {
+   ^~~
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:19:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+   for (z = 0; z < n - 2; z++) {
+                 ^
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:19:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+   for (z = 0; z < n - 2; z++) {
+                           ^~
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:22:10: error: expected declaration specifiers or '...' before string constant
+   printf("%s\n", chr_array[z+1]);
+          ^~~~~~
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:22:18: error: unknown type name 'chr_array'
+   printf("%s\n", chr_array[z+1]);
+                  ^~~~~~~~~
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:26:3: error: expected identifier or '(' before 'return'
+   return 0;
+   ^~~~~~
+C:\Users\hayschan\Documents\GitHub\LearningC\assignment\���ʵ���.c:27:1: error: expected identifier or '(' before '}' token
+ }
+ ^

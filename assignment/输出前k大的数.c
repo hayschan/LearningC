@@ -1,19 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <iostream>
-#include <algorithm>
 
 int cmp_1(const void *a, const void *b){ //quicksort comparator variant 1
    return ( *(int*)b - *(int*)a);
-  // return negative if a<b
-  // return postive if a>b
-/*  if (*(int*)a > *(int*)b)
-    return -1;
-  if (*(int*)a == *(int*)b)
-    return 0;
-  if (*(int*)a < *(int*)b)
-    return 1;
-    */
 }
 
 int cmp_2(const void *a, const void *b){ //quicksort comparator variant 2
@@ -25,10 +14,8 @@ int cmp_2(const void *a, const void *b){ //quicksort comparator variant 2
     return 1;
 }
 
-
-
 int main(){
-  //quicksort the array and then ouput first k numbers
+  // quicksort the array and then ouput first k numbers
   // print first topNUM elements
   int n, *array, topNUM, i, j;
   scanf("%d\n",&n);
@@ -38,9 +25,7 @@ int main(){
   }
   scanf("%d\n",&topNUM);
   // void qsort(void *base, size_t nel, size_t width, int (*compar)(const void *, const void *));
-  qsort(array, n, sizeof(int), cmp);
-  // using sort()
-  // sort (array, array+n, greater());
+  qsort(array, n, sizeof(int), cmp_1);
   for (j = 0; j < topNUM; j++) {
     printf("%d\n",array[j] );
   }
